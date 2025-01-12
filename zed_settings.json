@@ -12,8 +12,12 @@
     "metrics": false
   },
   "vim_mode": true,
+  "current_line_highlight": "line",
+  "relative_line_numbers": true,
+  "preferred_line_length": 80,
+  "wrap_guides": [80],
+  "multi_cursor_modifier": "alt",
   "ui_font_size": 16,
-  // "ui_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 14,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "cursor_blink": false,
@@ -21,5 +25,24 @@
     "mode": "system",
     "light": "One Light",
     "dark": "Tokyo Night Storm"
-  }
+  },
+  "features": {
+    "inline_completion_provider": "none"
+  },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "vertical_scroll_margin": 10,
+  "soft_wrap": "none",
+  "project_panel": {
+    "show_diagnostics": "all",
+    "scrollbar": { "show": "never" }
+  },
+  "indent_guides": {
+    "enabled": false
+  },
+  "use_on_type_format": false
 }
