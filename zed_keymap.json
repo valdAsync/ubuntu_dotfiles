@@ -1,0 +1,69 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Editor || Workspace",
+    "bindings": {
+      "ctrl-e": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen || vim_mode == normal",
+    "bindings": {
+      "space p": ["file_finder::Toggle", { "separate_history": true }],
+      "ctrl-r": "projects::OpenRecent",
+      "shift-h": "pane::ActivateNextItem",
+      "shift-l": "pane::ActivatePrevItem"
+    }
+  },
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "g ]": "editor::GoToDiagnostic",
+      "g [": "editor::GoToPrevDiagnostic",
+      "g shift-r": "editor::FindAllReferences",
+      "shift-k": "editor::Hover",
+      "g a": "editor::ToggleCodeActions",
+      "g r": "editor::Rename",
+      "[ x": "editor::SelectLargerSyntaxNode",
+      "] x": "editor::SelectSmallerSyntaxNode",
+      "space w": "workspace::Save",
+      "space q": "pane::CloseActiveItem",
+      "space f": "editor::Format"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !VimCount",
+    "bindings": {
+      "0": [
+        "vim::StartOfLine",
+        {
+          "displayLines": true
+        }
+      ],
+      "$": [
+        "vim::EndOfLine",
+        {
+          "displayLines": true
+        }
+      ]
+    }
+  }
+  // {
+  //   "context": "Editor && vim_mode == normal",
+  //   "bindings": {
+  //     "g c c": "editor::ToggleComments"
+  //   }
+  // },
+  // {
+  //   "context": "Editor && vim_mode == visual",
+  //   "bindings": {
+  //     "g c": "editor::ToggleComments"
+  //   }
+  // }
+]
