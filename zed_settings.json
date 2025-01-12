@@ -44,5 +44,8 @@
   "indent_guides": {
     "enabled": false
   },
-  "use_on_type_format": false
+  "use_on_type_format": false,
+  "git": {
+    "inline_blame": { "enabled": false, "show_commit_summary": false }
+  }
 }
