@@ -74,3 +74,5 @@ alias lt='eza --tree --level=2 --long --icons --git'
 alias lta='lt -a'
 alias ff="fzf --preview 'batcat --style=numbers --color=always {}'"
 alias fd='fdfind'
+
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
