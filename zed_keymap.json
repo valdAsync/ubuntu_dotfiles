@@ -16,7 +16,6 @@
     "context": "EmptyPane || SharedScreen || vim_mode == normal",
     "bindings": {
       "space p": ["file_finder::Toggle", { "separate_history": true }],
-      "ctrl-r": "projects::OpenRecent",
       "shift-h": "pane::ActivateNextItem",
       "shift-l": "pane::ActivatePrevItem"
     }
