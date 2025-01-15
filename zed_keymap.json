@@ -13,6 +13,14 @@
     }
   },
   {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "r": "project_panel::Rename",
+      "d": "project_panel::Delete"
+    }
+  },
+  {
     "context": "EmptyPane || SharedScreen || vim_mode == normal",
     "bindings": {
       "space p": ["file_finder::Toggle", { "separate_history": true }],
