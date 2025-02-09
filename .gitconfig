@@ -1,0 +1,8 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+  l = log --pretty=format:\"%C(yellow)%h%Creset %C(green)%ar%Creset %C(bold blue)%an%Creset %C(red)%d%Creset %C(dim white)%s\"
+[pull]
+	rebase = true
