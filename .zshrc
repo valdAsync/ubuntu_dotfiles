@@ -75,4 +75,21 @@ alias lta='lt -a'
 alias ff="fzf --preview 'batcat --style=numbers --color=always {}'"
 alias fd='fdfind'
 
+# git
+alias gst='git status'
+alias gaa='git add -A'
+alias gct='git commit'
+alias gcm='git checkout main'
+alias gd='git diff'
+alias gdc='git diff --cached'
+# [c]heck [o]ut
+alias co='git checkout'
+alias up='git push'
+alias upf='git push --force'
+alias pu='git pull'
+alias pur='git pull --rebase'
+alias fe='git fetch'
+alias re='git rebase'
+alias glr='git l -30'
+
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
